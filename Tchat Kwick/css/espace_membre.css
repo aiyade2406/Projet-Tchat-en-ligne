@@ -1,0 +1,232 @@
+
+@charset "utf-8";
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+}
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    scroll-behavior: none;
+}
+
+
+.left{
+    width: 35%;
+    height: 100%;
+    background-color: #065A82;
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+   
+    border-bottom-left-radius: 20px;
+}
+.left .gauche{
+    width: 35%;
+    height: 100%;
+    background-color: #065A82;
+    box-shadow: 8px 8px 8px grey;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+   
+}
+
+.left #droite{
+    width: 65%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 8px grey;
+    
+
+   
+   
+}
+.connecter{
+    background-color:rgb(255, 255, 255);
+   width: 100%;
+   height: 60px;
+  margin: 1px;
+   font-size: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   color: black;
+   overflow: auto;
+   box-shadow: 3px 3px 4px grey;
+  margin: 2px;
+}
+
+.message{
+    background-color: white;
+    width: 60%;
+    margin: 10px;
+    height: 100px;
+    border-radius: 30px;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 20%;
+    
+   
+   
+ }
+#right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-color:#bbdae8;
+
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(192, 192, 192);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  
+    
+    
+    
+}
+
+/*permet de custom la barre de defillement*/
+ ::-webkit-scrollbar{
+    width: 10px;
+    background-color:white;
+    border-top-right-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(217, 217, 217);
+    height: 60%;
+    border-top-right-radius: 20px;
+}
+
+#bouton{
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 6%;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20%;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+  
+    border: none;
+}
+.refresh{
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 6%;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 20%;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    border: none;
+    color: black;
+
+}
+.refresh a{
+   color: black;
+   text-decoration: none;
+
+}
+
+#bouton:hover{
+    transition: 0.6;
+    transform: scale(1.1);
+}
+.refresh:hover{
+    transition: 0.6;
+    transform: scale(1.1);
+}
+#envoyerMess{
+    background-color: rgb(224, 224, 224);
+    width: 15%;
+    height: 30px;
+    font-size: 19px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px white;
+   
+}
+#listedesmessage{
+    width: 100%;
+    overflow: scroll;
+    height: 80%;
+   
+}
+
+
+.formulaire{
+    border-top: 1px grey;
+    background-color:#065A82;
+    width: 100%;
+    height: 20%;
+    border-bottom-right-radius: 20px;
+
+}
+input[type=text]{
+    width: 80%;
+    
+   
+}
+
+
+@media screen  and (min-width: 576px) and (max-width: 960px)
+  {
+
+    .left{
+        width: 100%;
+        height: 40%;
+     }
+
+     .left{
+       display: flex;
+   
+     }
+ #right{
+    width: 100%;
+    height: 70%;
+
+ }
+
+ #bouton{
+    height: 25%;
+    font-size: 20px;
+    width: 96%;
+   
+
+ }
+
+ #droite{
+overflow: scroll;
+}
+
+.formulaire{
+    height: 20%;
+    
+}
+
+.refresh{
+    height: 25%;
+    font-size: 20px;
+    width: 96%;
+
+}
+  }
+

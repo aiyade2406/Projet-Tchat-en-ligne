@@ -1,0 +1,256 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+}
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    scroll-behavior: none;
+}
+/*la div left Cette div est separer en 2 partie gauche et droite*/
+
+.left{
+    width: 35%;
+    height: 100%;
+    background-color: #065A82;
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+.left .gauche{
+    width: 35%;
+    height: 100%;
+    background-color: #065A82;
+    box-shadow: 8px 8px 8px grey;
+    border-right: 10px solid rgb(255, 255, 255);
+   
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.left #droite{
+    width: 65%;
+    height: 100%;
+    background-color: #065A82;
+   
+   
+}
+
+/*connecter et une div qui est creer un js et qui va afficher les uttilisateur connecter*/
+.connecter{
+    background-color: #065A82;
+   width: 100%;
+   height: 80px;
+  margin: 1px;
+   font-size: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+   box-shadow: 2px 2px 2px white;
+   overflow: auto;
+}
+/*message et une div generer en js qui va etre inclus dans la div liste des message*/
+.message{
+    background-color: white;
+    width: 99%;
+    height: 100px;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+   
+   
+ }
+#right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    
+}
+
+#bouton{
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 6%;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top: 20%;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    border: none;
+
+}
+.refresh{
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    height: 6%;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top: 20%;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    border: none;
+    color: black;
+
+}
+.refresh a{
+   color: black;
+   text-decoration: none;
+
+}
+
+#bouton:hover{
+    transition: 0.3;
+    transform: scale(1.1);
+}
+#envoyerMess{
+    background-color: rgb(224, 224, 224);
+    width: 15%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px white;
+   
+}
+/*cette div va contenir tout les message*/
+#listedesmessage{
+    width: 100%;
+    overflow: scroll;
+    height: 80%;
+   
+    
+    
+   
+}
+
+
+.formulaire{
+    border-top: 1px grey;
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    border-bottom-left-radius: 20px;
+
+}
+input[type=text]{
+    width: 80%;
+    
+   
+}
+
+/*si dessous debut du responsive pour tablette*/
+@media screen  and (min-width: 576px) and (max-width: 960px)
+  {
+
+    .left{
+        width: 100%;
+        height: 40%;
+     }
+
+     .left{
+       display: flex;
+   
+     }
+ #right{
+    width: 100%;
+    height: 70%;
+
+ }
+
+ #bouton{
+    height: 25%;
+    font-size: 20px;
+    width: 96%;
+   
+
+ }
+
+ #droite{
+overflow: scroll;
+}
+
+.formulaire{
+    
+    height: 20%;
+    
+}
+
+.refresh{
+    height: 25%;
+    font-size: 20px;
+    width: 96%;
+
+}
+  }
+
+
+
+/*si dessous debut du responsive pour tablette*/
+  @media screen  and (max-width: 576px)
+  {
+
+    .left{
+        width: 100%;
+        height: 40%;
+     }
+
+     .left{
+       display: flex;
+   
+     }
+ #right{
+    width: 100%;
+    height: 70%;
+
+ }
+
+ #bouton{
+    height: 25%;
+    font-size: 20px;
+    width: 96%;
+   
+
+ }
+
+ #droite{
+overflow: scroll;
+}
+
+.formulaire{
+    height: 20%;
+    
+}
+
+.refresh{
+    height: 25%;
+    font-size: 20px;
+    width: 96%;
+
+}
+  }
+

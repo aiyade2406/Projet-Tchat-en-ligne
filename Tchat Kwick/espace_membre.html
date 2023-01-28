@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Content-Language" content="fr">
+  <meta name="Description" content="Tchat en ligne">
+  <meta name="Keywords" content="Communication,échange">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace membre</title>
+  <link rel="stylesheet" type="text/css" href="css/espace_membre.css" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+  </style>
+</head>
+<!-- dans le body sont lancer les fonction qui permettent d'afficher les message les connecter-->
+<body onLoad="utili(); listemessage();">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IP address</title>
+  </head>
+  <body>
+    <!-- debut du html creation d'un div qui va tout contenir-->
+    <div class="contain">
+      <!-- si dessous commence la section de gauche avec les bouton et la liste des connecter-->
+      <section class="left">
+        <div class="gauche">
+          <button id="bouton">Logout</button>
+          <button class="refresh">
+            <a href="#">Refresh Message</a>
+          </button>
+        </div>
+        <div id="droite">
+        </div>
+      </section>
+      <!-- si dessous se trouve section ou se trouve la le tchat-->
+      <section id="right">
+        <div id="listedesmessage">
+        </div>
+        <section class="formulaire">
+          <form action="#" method="GET">
+            <input type="text" id="message" placeholder="Ecrivez votre message(Le message s'affiche a la fin du scroll)">
+            <button id="envoyerMess" onclick="envoyer()" type="submit">Submit</button>
+          </form>
+        </section>
+      </section>
+    </div>
+  </body>
+  </html>
+  <script src="js/espace_membre.js" defer>
+  </script>
+</body>
+</html>
